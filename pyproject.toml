@@ -1,0 +1,40 @@
+[project]
+name = "witlore-audit"
+version = "0.1.0"
+description = "Generates cell-tower Desktop Audit reports from tranche release rows"
+requires-python = ">=3.9"
+dependencies = [
+    "shapely>=2.0",
+    "pyproj>=3.4",
+    "requests>=2.28",
+    "python-docx>=1.0",
+    "matplotlib>=3.6",
+    "PyYAML>=6.0",
+    "openpyxl>=3.1",   # the release sheet is supplied as .xlsx
+    "Pillow>=9.0",     # stitching basemap tiles; matplotlib already needs it
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+# The web UI is a demo surface over the same pipeline. Keeping Flask optional
+# means the CLI, which is the deliverable, installs with no extra dependency.
+web = ["flask>=3.0"]
+
+[project.scripts]
+da = "da.cli:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# The UI's html/css/js ship with the package, so a non-editable install serves
+# the same pages an editable one does.
+[tool.setuptools.package-data]
+"da.web" = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

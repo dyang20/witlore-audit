@@ -1,0 +1,123 @@
+SOURCE
+======
+Council Bluffs Municipal Code, Title 15 ZONING,
+Chapter 15.31 COMMUNICATION TOWERS
+
+Retrieved from the city's official code platform:
+  https://councilbluffs.municipalcodeonline.com/book?type=ordinances
+    #name=Chapter_15.31_-_COMMUNICATION_TOWERS
+
+The site is a client-side application, so the chapter was read from the
+rendered page rather than fetched as a document. Section numbering, headings
+and enacting-ordinance citations below are as the official code presents them.
+
+Enacting ordinances cited in the chapter: Ord. No. 6053 § 1 (2010-03-08), which
+repealed and replaced the former section, itself derived from Ord. No. 5458 § 3
+(1999). Sections 15.31.050 and 15.31.060 carry (Ord. 5458 § 3 (part), 1999).
+
+Note on an earlier working copy: a third-party mirror (zoneomics.com) was used
+before this retrieval. Its substantive text matched, but its section HEADINGS
+were wrong, and the two human desktop audits cite a different host
+(councilbluffs-ia.elaws.us). The headings below are the official ones.
+
+
+CHAPTER 15.31 COMMUNICATION TOWERS
+==================================
+
+15.31.010 Statement Of Intent
+
+The purpose of this chapter is to provide for the appropriate location of
+communication towers and related accessory facilities to serve the needs of the
+community. The conditional use procedure set forth in CBMC 15.02 provides for
+the review and discretionary approval of communication tower sites considering
+conditions specific to the location while offering uniform and comprehensive
+standards for the development of functionally equivalent services. These
+regulations are designed to assure the managed development of the community's
+communication infrastructure through a timely and responsible review process.
+
+(Ord. No. 6053, § 1, 3-8-2010)
+
+Editor's note - Ord. No. 6053, § 1, adopted Mar. 8, 2010, repealed the former
+section and enacted a new section as set out herein. The former section
+pertained to similar subject matter and derived from Ord. No. 5458, § 3, 1999.
+
+
+15.31.020 Applicability
+
+Communication towers exceeding the maximum height allowed in the underlying
+zoning district to a maximum height of two hundred (200) feet are permitted in
+all zoning districts, subject to approval of a conditional use permit as set
+forth in CBMC 15.02 and the additional minimum standards in this chapter.
+
+The following types of communication towers are subject to the standards and
+procedures of this chapter:
+UHF, VHF and cable television.
+AM, FM, and two-way radio.
+Fixed point microwave.
+Wireless communications, including but not limited to paging, cellular,
+enhanced specialized mobile radio (ESMR), and personal communications systems
+(PCS).
+
+An antenna and supporting structure for the following are exempt from the
+development standards of this chapter and are allowed in any zoning district, if
+accessory to a permitted use and in compliance with other applicable regulations
+of that zoning district:
+Amateur radios licensed by the FCC.
+Citizens band radios.
+Direct broadcast satellite dises.
+Conventional home television antennas, including UHF and VHF antennas.
+
+
+15.31.030 Accessory Uses
+
+15.31.040 Site Plan Review Procedure
+
+
+15.31.050 Standards And Conditions For Approval
+
+Conditional use permits for the purpose of installing communication towers
+shall be evaluated based on the following information:
+
+Compliance with CBMC 15.02 "Administration and Enforcement" authorizing the
+zoning board of adjustment to make final decisions on applications for
+conditional uses and the process as described in that chapter.
+
+The type and purpose of the tower.
+
+The height of the proposed tower as measured from the natural undisturbed
+ground surface below the center of the base of the tower to the tip of the
+highest antenna or piece of equipment attached.
+
+Minimum setbacks from all adjoining property equal to:
+
+One hundred percent (100%) of the tower height from the base of the tower to any
+adjoining residential dwelling, whether located upon residentially zoned
+property or not.
+
+Twenty (20) feet from the base of the tower to any adjoining lot which is not
+zoned for residential use.
+
+Proximity to other towers.
+
+(Ord. 5458 § 3 (part), 1999)
+
+
+15.31.060 Additional Regulations
+
+A conditional use permit shall become void two years after the date of approval
+unless the applicant has obtained a building permit and is in the process of or
+has completed construction of the communication tower as approved;
+
+A conditional use permit approved subject to these procedures shall run with the
+land and continue to be valid regardless of change of ownership of either the
+land or the approved structure; however, the owner is required to notify the
+city of any subleases or shared use of the tower.
+
+After proper notice of a public hearing on the matter as required elsewhere in
+this title, the zoning board of adjustment may revoke a conditional use if it
+finds that the use is in violation of the terms of approval;
+
+All obsolete or unused towers and accessory facilities shall be removed at
+owner's expense within twelve (12) months of cessation of operation at the site.
+
+(Ord. 5458 § 3 (part), 1999)

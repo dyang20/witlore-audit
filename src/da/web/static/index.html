@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desktop Audit</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">Desktop Audit<span class="sub">Pottawattamie County / Council Bluffs / Oakland, IA</span></div>
+  <div class="sources" id="sourceStrip"></div>
+</header>
+
+<main class="layout">
+
+  <!-- ------------------------------------------------------------ form -->
+  <aside class="panel form">
+    <div class="tabs small" role="tablist">
+      <button class="tab active" data-mode="sheet">Tranche row</button>
+      <button class="tab" data-mode="adhoc">New site</button>
+    </div>
+
+    <section id="modeSheet" class="mode">
+      <label class="field">
+        <span>Opportunity <em class="hint">id &middot; RAD/ring ft &middot; &#10003; human audit &middot; &#7472; derived</em></span>
+        <input id="oppFilter" placeholder="Filter&hellip;" autocomplete="off">
+        <select id="oppInput" size="10"></select>
+      </label>
+      <div id="sourceWarning" class="warn hidden"></div>
+      <div id="rowPreview" class="preview muted">Pick a row to see its inputs.</div>
+      <label class="check">
+        <input type="checkbox" id="compareChk">
+        <span>Compare against the human audit</span>
+      </label>
+    </section>
+
+    <section id="modeAdhoc" class="mode hidden">
+      <label class="field"><span>Opportunity ID</span>
+        <input id="adId" placeholder="DEMO-CITY"></label>
+      <div class="row2">
+        <label class="field"><span>Latitude</span>
+          <input id="adLat" placeholder="41.2581" inputmode="decimal"></label>
+        <label class="field"><span>Longitude</span>
+          <input id="adLon" placeholder="-95.8608" inputmode="decimal"></label>
+      </div>
+      <div class="row2">
+        <label class="field"><span>Ring radius, ft</span>
+          <input id="adRadius" placeholder="1500" inputmode="numeric"></label>
+        <label class="field"><span>Requested RAD, ft</span>
+          <input id="adRad" placeholder="180" inputmode="numeric"></label>
+      </div>
+      <label class="field"><span>State</span>
+        <input id="adState" value="IA" maxlength="2"></label>
+    </section>
+
+    <details class="opts">
+      <summary>Options</summary>
+      <label class="check"><input type="checkbox" id="skipAsr"><span>Skip FCC ASR lookup</span></label>
+      <label class="check"><input type="checkbox" id="skipElev"><span>Skip USGS elevation</span></label>
+    </details>
+
+    <button id="runBtn" class="run">Run audit</button>
+    <div id="cliHint" class="cli" hidden>
+      <div class="cli-label">Equivalent CLI</div>
+      <code id="cliText"></code>
+    </div>
+  </aside>
+
+  <!-- --------------------------------------------------------- results -->
+  <section class="panel results" id="results">
+
+    <div id="idle" class="idle">
+      <p>Run a tranche row or a new site. Every claim in the output traces to a
+         source, and the document is the same one the CLI writes.</p>
+    </div>
+
+    <!-- progress -->
+    <div id="progress" class="progress hidden">
+      <div class="progress-head">
+        <span class="spinner" id="spin"></span>
+        <strong id="progressTitle">Running</strong>
+        <span class="muted" id="elapsed">0s</span>
+      </div>
+      <pre id="log" class="log"></pre>
+    </div>
+
+    <!-- outcome -->
+    <div id="outcome" class="hidden">
+
+      <div class="verdict" id="verdict">
+        <div class="verdict-main">
+          <div class="rec" id="recText">—</div>
+          <div class="rec-sub" id="recSub"></div>
+        </div>
+        <button id="dlBtn" class="dl">Download .docx</button>
+      </div>
+
+      <div class="metrics" id="metrics"></div>
+
+      <div class="derivation" id="derivation"></div>
+
+      <div class="tabs" id="viewTabs" role="tablist">
+        <button class="tab active" data-view="parcels">Parcels</button>
+        <button class="tab" data-view="compare" id="tabCompare" hidden>Comparison</button>
+        <button class="tab" data-view="sensitivity">Sensitivity</button>
+        <button class="tab" data-view="unresolved">Unresolved</button>
+        <button class="tab" data-view="rules">Rules</button>
+        <button class="tab" data-view="evidence">Evidence</button>
+        <button class="tab" data-view="maps">Maps</button>
+        <button class="tab" data-view="assumptions">Assumptions</button>
+      </div>
+
+      <div class="view" id="view-parcels">
+        <div class="filters" id="bindingFilters"></div>
+        <div class="tablewrap"><table id="parcelTable"></table></div>
+      </div>
+
+      <div class="view hidden" id="view-compare"></div>
+
+      <div class="view hidden" id="view-sensitivity">
+        <div class="sens-head">
+          <p class="muted">
+            Sec. 8.004.220.12 sets the setback at the manufacturer's designed fall
+            distance, a figure that does not exist until a structure is engineered.
+            This slider scales the stand-in. It recomputes against layers already
+            fetched, so it costs no network.
+          </p>
+          <div class="sens-controls">
+            <input type="range" id="ratio" min="0.25" max="1.5" step="0.05" value="1">
+            <output id="ratioOut">1.00 &times; height</output>
+            <span class="muted" id="setbackOut"></span>
+          </div>
+        </div>
+        <div id="sensResult" class="sens-result"></div>
+      </div>
+
+      <div class="view hidden" id="view-unresolved"></div>
+      <div class="view hidden" id="view-rules"></div>
+      <div class="view hidden" id="view-evidence"></div>
+      <div class="view hidden" id="view-maps"></div>
+      <div class="view hidden" id="view-assumptions"></div>
+    </div>
+
+    <div id="failure" class="failure hidden"></div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

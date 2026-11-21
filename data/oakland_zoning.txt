@@ -1,0 +1,88 @@
+SOURCE
+======
+City of Oakland, Iowa - Zoning Ordinance
+
+Retrieved from the city's own published PDF:
+  https://www.cityofoaklandiowa.com/sites/default/files/uploads/ordinances/135310758.pdf
+
+This is a PARTIAL EXTRACT, not a complete snapshot. The document runs to about
+125,000 characters and was read in two passes; the provisions below are those
+bearing on tower siting, quoted as printed. Section 5's full numbered special-use
+list was not captured in full, and the AG district's dimensional standards were
+not reached. Both are recorded as gaps in the generated reports.
+
+The same ordinance is linked from the human desktop audit for TI-OPP-43986.
+
+
+DISTRICT USE PROVISIONS
+=======================
+
+M-1 INDUSTRIAL DISTRICT - Uses Permitted by Right
+
+35. Telephone and other communication services, including satellite stations and
+towers.
+
+C-1 GENERAL COMMERCIAL DISTRICT - Uses Permitted by Right
+
+52. Telephone and communication services, except satellite stations and towers.
+
+CBD CENTRAL BUSINESS DISTRICT
+
+Incorporates the uses permitted in the C-1 district, subject to listed
+exceptions. Telephone and communication services are not among the stated
+exceptions. Whether the C-1 carve-out of "satellite stations and towers" carries
+across is not stated in the ordinance.
+
+
+SPECIAL USES
+============
+
+Section 5(A), item 7:
+
+Radio tower or broadcasting station.
+
+Special uses are granted by the Mayor and Council, following review by the
+Planning and Zoning Commission.
+
+Section 5: Any proposed special use shall otherwise comply with all the
+regulations set forth in the ordinance
+
+Section 5(B): In considering any application for a special use permit, the
+Planning and Zoning Commission and City Council [make findings]. A commercial or
+industrial special use in a residential district shall not be approved unless it
+is determined that the proposed use would be of limited duration or compatible.
+
+Section 5(C): Special uses shall commence within one year from the date of
+approval, unless extended by action of the City Council.
+
+Section 5(D): Revocation proceedings may be initiated by a majority vote of the
+City Council or the Planning and Zoning Commission.
+
+
+HEIGHT AND AREA REGULATIONS
+===========================
+
+Section 6, Height:
+
+The height regulations prescribed herein shall not apply to chimneys, cupolas,
+tanks, church spires, belfries, domes, monuments, fire and hose towers,
+observation towers, transmission towers, flagpoles, radio and television towers,
+masts, aerials, cooling towers, water towers, elevator shafts, windmills,
+conveyors, and other similar projections.
+
+
+DISTRICTS PRESENT IN THE ORDINANCE
+==================================
+AG (agricultural), R-1, R-1M, R-2, R-3, C-1, CBD, M-1, F.
+
+The ordinance uses "special use", not "conditional use". There is no A-1 or A-2
+district in the City of Oakland; those are Pottawattamie County districts.
+
+
+NOT CAPTURED
+============
+- The complete Section 5(A) numbered special-use list (items 1-6 and 8-11).
+- The opening clause of Section 5 stating who grants special use permits and on
+  what authority.
+- AG district dimensional standards (yards, setbacks, lot area).
+- Any overlay districts.

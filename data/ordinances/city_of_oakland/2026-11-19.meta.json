@@ -1,0 +1,8 @@
+{
+  "jurisdiction": "City of Oakland",
+  "url": "https://www.cityofoaklandiowa.com/sites/default/files/uploads/ordinances/135310758.pdf",
+  "retrieved_at": "2026-11-19",
+  "sha256": "f9a24cec30f387125021099a086189e381dcfc85252bacfec06dec7653216a16",
+  "source_type": "retrieved",
+  "note": "Partial extract of the city's published ordinance PDF; see data/oakland_zoning.txt."
+}

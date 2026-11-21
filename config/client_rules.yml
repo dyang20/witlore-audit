@@ -1,0 +1,79 @@
+# Client build parameters. Every value here is printed in the report's
+# Assumptions section, because the DA training says these vary by client and
+# tells analysts to ask the PM rather than guess.
+#
+# Confirmed with Tillman:
+#   - 100x100 ft compound is ideal; 80x80 has been approved on special occasions
+#   - FEMA flood zones are a risk to flag, not an automatic disqualifier
+
+compound:
+  primary_ft: 100          # standard lease compound
+  exception_ft: 80         # approved on special occasions; flagged, never silent
+  access_width_ft: 20      # access easement, used for the sketch only
+
+tower:
+  # From the Tillman DA training. These came from a meeting summary rather than
+  # a written standard, so they are configuration and the report says so.
+  monopole_max_ft: 150
+  self_support_max_ft: 274   # guyed at 275 and above
+  round_up_to_ft: 5
+  guy_anchor_ratio: 0.80     # guy wires ~80% of tower height
+
+setbacks:
+  # Pottawattamie Sec. 8.004.220.12 sets the setback for towers over 50 ft at
+  # "the manufacturer's designed fall distance". That figure only exists once a
+  # structure is engineered, so it cannot be known at desktop-audit stage.
+  #
+  # This ratio is the stand-in, applied to overall tower height. 1.0 is the
+  # conservative reading and is the default. In practice a fall-zone letter
+  # usually certifies far less, because modern towers are designed to buckle
+  # rather than topple. Raising or lowering this materially changes which
+  # parcels qualify, so it is stated in every report.
+  fall_distance_ratio: 1.0
+
+flood:
+  # Confirmed: mark as risk, do not exclude.
+  exclude_from_buildable: false
+  risk_zones: [A, AE, AO, AH, A99, V, VE]
+
+wetlands:
+  exclude_from_buildable: true
+  # The DA training asks whether guy anchors can be placed without entering
+  # wetland, and treats crossing wetland for access as equivalent to building
+  # in it.
+  exclude_from_guy_anchors: true
+
+dwellings:
+  # Pottawattamie Sec. 8.004.220.13: tower at least its own height from
+  # adjacent dwellings or structures not associated with the tower facility.
+  apply_rule: true
+  # Signals combined to decide a dwelling exists. A footprint with no assessed
+  # dwelling value is probably a barn or shed.
+  require_signals: 1
+  signals: [assessed_dwelling_value, residential_footprint_class, address_point]
+
+zoning_levels:
+  # Two definitions of the 1-4 scale are in play and they disagree about CUPs.
+  #
+  #   Assignment:   1 no zoning | 2 admin review | 3 admin review with counsel
+  #                 4 CUP, SUP, variances
+  #   Human audits: 3 "site plan review with meeting or typical CUP"
+  #   (43986,       4 "variance, rezoning, text amendment, or difficult CUP
+  #    37954)          process"
+  #
+  # Every report prints BOTH, per jurisdiction, so no reader has to guess which
+  # scale a bare number is on. This switch only picks the headline label.
+  # true  = the assignment's scale, which is the stated output format.
+  # false = the scale the human audits use.
+  cup_is_level_4: true
+
+maps:
+  # Topo and street/aerial overviews on USGS National Map tiles. Set false, or
+  # pass --no-basemap, to skip them; every other map is drawn from fetched
+  # geometry and needs no tile server.
+  basemaps: true
+
+candidates:
+  # The DA training sets a goal of three candidates per ring, or a documented
+  # reason why that was not possible.
+  target_per_ring: 3

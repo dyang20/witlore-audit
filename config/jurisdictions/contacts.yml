@@ -1,0 +1,41 @@
+# Planning and building contacts, printed in the "Zoning and Building Permit
+# Contacts" section of every report whose ring touches the jurisdiction.
+#
+# A phone number is a claim like any other, so each entry carries the page it
+# was read from and the date. Entries marked verified: false were NOT read from
+# an official page and the report prints them with that caveat.
+
+Pottawattamie County:
+  office: Pottawattamie County Planning and Development
+  address: Courthouse, First Floor, 227 S 6th St, Suite 157, Council Bluffs, IA 51501
+  phone: (712) 328-5792
+  building_inspections: (712) 328-5847
+  fax: (712) 328-4731
+  hours: 8:00 am to 4:30 pm, Monday to Friday
+  hearing_body: >-
+    Zoning Board of Adjustment hears conditional uses and variances. Meets the
+    fourth Wednesday of the month at 5:30 pm when applications are filed. Its
+    decisions may be appealed to District Court within 30 days.
+  source_url: https://pottcounty-ia.gov/departments/planning_and_development/zoning_board_of_adjustment
+  retrieved: "2026-11-21"
+  verified: true
+
+Council Bluffs:
+  office: City of Council Bluffs Community Development Department, Planning and Zoning
+  address: City Hall, 209 Pearl Street, Council Bluffs, IA 51503
+  phone: (712) 890-5350
+  hearing_body: >-
+    Zoning Board of Adjustment hears conditional use permits for towers under
+    CBMC Chapter 15.31, following the procedure in Chapter 15.02.
+  source_url: https://www.councilbluffs-ia.gov
+  retrieved: null
+  verified: false
+
+City of Oakland:
+  office: City of Oakland, City Clerk
+  hearing_body: >-
+    The city publishes no zoning map online. The TI-OPP-43986 human audit
+    records obtaining the map by e-mail from the Assistant City Clerk.
+  source_url: https://www.cityofoaklandiowa.com
+  retrieved: null
+  verified: false

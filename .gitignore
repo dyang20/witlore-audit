@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# regenerated on every run; the five calibration reports are copied to
+# calibration/ by tools/collect_calibration.py, which IS committed
+outputs/
+
+# 40 MB FCC bulk file, re-downloaded weekly
+data/asr/
+data/cache/
+
+# Witlore's completed audits. Client documents: read locally for calibration,
+# never pushed.
+human_reports/*.docx
