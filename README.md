@@ -102,7 +102,7 @@ document does not:
 Localhost only, and not hostable: the pipeline needs the venv, network access
 to county ArcGIS, the snapshots in `data/` and the ASR cache.
 
-## Verify before a demo
+## Verifications
 
 ```bash
 python -m pytest -q                 # 80 offline tests, no network
